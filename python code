@@ -1,0 +1,25 @@
+These are the python code for data visualizations 
+
+## for Scatter plot
+import matplotlib.pyplot as plt
+dataset.plot(kind='scatter',x='GENDER',y='SALARY',color='blue')
+plt.show()
+
+## for line chart
+import matplotlib.pyplot as plt
+ax=plt.gca()
+dataset.plot(kind='line',x='EMP ID',y='WEIGHT',ax=ax)
+dataset.plot(kind='line',x='EMP ID',y='AGE',color='green',ax=ax)
+plt.show()
+
+## for bar chart
+import matplotlib.pyplot as plt
+ax=plt.gca()
+dataset.plot(kind='bar',x='GENDER',y='SALARY',color='green',ax=ax)
+plt.show()
+
+## for scatter plot
+import matplotlib.pyplot as plt
+ax=plt.gca()
+dataset.plot(kind='scatter',x='EMP NAME',y='SALARY',ax=ax)
+plt.show()
